@@ -1,7 +1,7 @@
 # import random library
 import random
 
-# defining variobuls
+# defining mostly empty variobuls
 temperatures = []
 good_days_count = 0
 days_of_the_week = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"]
@@ -14,8 +14,9 @@ for i in range(7):
 
 	if temperatures[i] % 2 == 0:
 		good_days_count += 1
-		good_day = days_of_the_week[i]
-		good_days_list.append(good_day)
+
+		# makes it add to the list of good days the day of the week based on the [i] = index
+		good_days_list.append(days_of_the_week[i])
 
 #hi and low
 highest_temp = max(temperatures)
